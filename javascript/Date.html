@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>时间显示</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        var date = new Date()
+        document.write(date)
+        document.write("</br>")
+        document.write(date.toLocaleString())
+        document.write("</br>")
+        document.write("现在是"+date.getFullYear()+"年")
+        var month = date.getMonth()+1
+        document.write(month+"月")
+        document.write(date.getDate()+"日")
+        // 星期日返回的是 0
+        document.write("星期"+date.getDay())
+        document.write("&nbsp")
+        document.write(date.getHours()+"时")
+        document.write(date.getMinutes()+"分")
+        document.write(date.getSeconds()+"秒")
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js的bom对象</title>
+    <!--所有的bom对象都是在window里面操作的-->
+</head>
+<body>
+//鼠标点击事件
+<input type="button" value="按键"  onclick="kerwin();">
+<hr/>
+<script type="text/javascript">
+
+    // confirm 确认提示框
+  /*  var p = window.confirm("是否删除")
+    if(p == true){
+        alert("删除成功！")
+    }
+    else {
+        alert("取消删除")
+    }*/
+
+    //prompt 输入对话框
+    // window.prompt("请输入：","100")
+
+    //open方法 打开一个新窗口
+
+    /*function kerwin() {
+        window.open("九九乘法表.html","","width = 600 ,height = 600")
+    }*/
+
+    //setInterval("js代码",毫秒数)  每多少毫秒刷新一次页面
+    //clearInterval（id）可以清除setInterval设置的定时刷新
+    var id1 = window.setInterval("alert('刷新页面')",2000)
+    function kerwin() {
+        clearInterval(id1)
+    }
+
+    //window.setTimeout("js代码",毫秒数)  表示在多少毫秒后执行js代码一次
+    //window.clearTimeout与clearInterval同样用法
+    //window.setTimeout("alert('5秒后')",5000)
+    //window.close()
+
+
+    //输出当前网站的网址
+    /*document.write(location.href)
+    document.write("<hr/>")
+    function kerwin(){
+        location.href = "九九乘法表.html"
+    }
+    document.write(navigator.appName)
+    document.write("</br>")
+    document.write(screen.width)
+    document.write(screen.height)*/
+
+
+    //history函数
+
+</script>
+
+</body>
+</html>

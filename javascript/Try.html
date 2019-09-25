@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态显示时间</title>
+    <script type="text/javascript">
+
+    function showtime() {
+        nowtime = new Date()
+        year = nowtime.getFullYear()
+        month= nowtime.getMonth()+1
+        day = nowtime.getDate()
+
+        document.getElementById("mytime" ).innerText=
+            year+"年"+month+"月"+day+"日"+nowtime.toLocaleString()
+    }
+    setInterval("showtime()" ,1000)
+</script>
+</head>
+<body>
+    <span id = "mytime"></span>
+
+</body>
+</html>

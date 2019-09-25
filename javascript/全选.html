@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择框</title>
+</head>
+<body>
+    <input type="checkbox" id="boxid"/>全选/全不选
+    <br/>
+    <input type="checkbox" name="love"/>篮球
+    <input type="checkbox" name="love"/>足球
+    <input type="checkbox" name="love"/>羽毛球
+    <input type="checkbox" name="love"/>乒乓球
+    <br/>
+    <input type="button" value="全选" onclick="setall();">
+    <input type="button" value="取消全选" onclick="setno();">
+    <input type="button" value="反选" onclick="seto();">
+    <script type="text/javascript">
+        function seto() {
+            var loves3 = document.getElementsByName("love")
+            for (var i = 0; i < loves3.length; i++) {
+
+                var love11 = loves3[i];
+
+                if(love11.checked = true){
+                    love11.checked = false;
+                } else(love11.checked = false){
+                    love11.checked = true;
+                }
+
+        }
+        function setall() {
+            var loves1 = document.getElementsByName("love");
+            for(var i =0;i<loves1.length;i++){
+                var love1 = loves1[i];
+                love1.checked = true ;
+            }
+        }
+        function setno() {
+            var loves2 = document.getElementsByName("love");
+            for(var i =0;i<loves2.length;i++){
+                var love2 = loves2[i];
+                love2.checked = false ;
+            }
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>
